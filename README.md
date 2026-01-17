@@ -1,6 +1,7 @@
 # wifi-blocker
 This is a tool built using kali linux , ettercap and nmap
 
+Note:This tool was built only for learning concepts perfect one is not made like there should be arp checks that whether it can actually work arping or not 
 This project demonstrates a network-level technique to selectively block internet access for a specific device within a local area network (LAN).
 The tool is designed for educational and laboratory use only, focusing on understanding how ARP spoofing, packet forwarding, and firewall rules interact at Layer 2 and Layer 3 of the network stack
 The script automates:
