@@ -19,3 +19,9 @@ If you want to use this tool There are few things first you need to install in k
 sudo apt update
 sudo apt install ettercap-text-only nmap
 ```
+Now download the file from the github and copy the script for the file lets say i am downloading it in downloads so my file path is /kali/Downloads/
+```bash
+cd /kali/Downloads/
+chmod +x wifi_blocker.sh  -- this command is to give permission to the file so that it gets executable
+wifi_blocker.sh
+```
