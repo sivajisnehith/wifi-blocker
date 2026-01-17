@@ -32,11 +32,11 @@ for item in "${network_interfaces[@]}"; do
 done
 
 if [[ "$found" == true ]]; then
-    echo "✅ '$selected_interface' found in the list"
+    echo "super ra bittu '$selected_interface' found in the list"
      ip_addr=$(ip -4 addr show "$selected_interface" 2>/dev/null | awk '/inet / {print $2}' | cut -d/ -f1)
     echo "The ip address of this one is $ip_addr"
 else
-    echo "❌ '$selected_interface' not found in the list"
+    echo "super ra bittu '$selected_interface' not found in the list"
 	exit 1
 fi
 
@@ -70,7 +70,7 @@ echo "victim=[$wanted_ip]"
 echo "gateway=[$gateway]"
 
 if [[ "$founds" == true ]]; then
-    echo "✅ '$wanted_ip' found in the list"
+    echo "super ra bittu '$wanted_ip' found in the list"
     echo "[+] Blocking internet for $wanted_ip"
 
     # Enable forwarding
@@ -89,7 +89,7 @@ if [[ "$founds" == true ]]; then
     echo 0 | sudo tee /proc/sys/net/ipv4/ip_forward >/dev/null
     echo "[✓] Internet restored"
 else
-    echo "❌ '$wanted_ip' not found in the list"
+    echo "super ra bittu '$wanted_ip' not found in the list"
     exit 1
 fi
 
