@@ -11,3 +11,11 @@ The script automates:
 #ARP-based traffic interception
 #Internet blocking using firewall rules
 #Safe network restoration
+
+
+If you want to use this tool There are few things first you need to install in kali linux either dual boot or vm
+
+```bash
+sudo apt update
+sudo apt install ettercap-text-only nmap
+```
